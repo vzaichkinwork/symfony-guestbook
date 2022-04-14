@@ -26,7 +26,7 @@ class SpamChecker
     {
         $response = $this->client->request('POST', $this->endpoint, [
             'body' => array_merge($context, [
-                'blog' => 'https://main-bvxea6i-ren74i2qdnd2o.eu-5.platformsh.site',
+                'blog' => 'https://guestbook.example.com',
                 'comment_type' => 'comment',
                 'comment_author' => $comment->getAuthor(),
                 'comment_author_email' => $comment->getEmail(),
