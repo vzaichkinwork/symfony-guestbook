@@ -16,7 +16,7 @@ runtime:
         - pdo_pgsql
         - sodium
         - xsl
-        
+        - xdebug
 
 variables:
     php:
