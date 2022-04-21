@@ -280,9 +280,6 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
-    "symfony/amqp-messenger": {
-        "version": "v5.4.5"
-    },
     "symfony/asset": {
         "version": "v5.4.7"
     },
@@ -533,9 +530,6 @@
     "symfony/proxy-manager-bridge": {
         "version": "v5.4.6"
     },
-    "symfony/redis-messenger": {
-        "version": "v5.4.6"
-    },
     "symfony/routing": {
         "version": "5.4",
         "recipe": {
@@ -582,20 +576,20 @@
     "symfony/service-contracts": {
         "version": "v2.4.1"
     },
-    "symfony/slack-notifier": {
-        "version": "5.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "5.2",
-            "ref": "192bc241a3095c6861353e5a7a652ad35659ca92"
-        }
-    },
     "symfony/stopwatch": {
         "version": "v5.4.5"
     },
     "symfony/string": {
         "version": "v5.4.3"
+    },
+    "symfony/telegram-notifier": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.0",
+            "ref": "5cf5c19e8fdcbf922de680cdf8d65fa7d77758ae"
+        }
     },
     "symfony/translation": {
         "version": "5.4",
