@@ -44,7 +44,10 @@ class CommentReviewNotification extends Notification implements EmailNotificatio
         }
 
         $message = ChatMessage::fromNotification($this, $recipient, $transport);
-        $message->subject($this->getSubject());
+        $message->subject(sprintf('%s (%s) says: %s',
+            $this->comment->getAuthor(),
+            $this->comment->getEmail(),
+            $this->comment->getText()));
 
         $telegramOptions = (new TelegramOptions())
 //            ->chatId('171311304')
