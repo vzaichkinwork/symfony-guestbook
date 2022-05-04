@@ -2,6 +2,6 @@ scenarios: |
     #!blackfire-player
 
     scenario
-        name "Test homepage"
-        visit url('/')
+        name "Conference Guestbook"
+        visit url('/en/')
             expect status_code() == 200
