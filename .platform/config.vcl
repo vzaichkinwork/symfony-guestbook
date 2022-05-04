@@ -18,7 +18,6 @@ sub vcl_recv {
     }
 }
 
-
 # Don't profile ESI requests
 if (req.esi_level > 0) {
     unset req.http.X-Blackfire-Query;
